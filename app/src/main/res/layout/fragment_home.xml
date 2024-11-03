@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment">
+
+        <TextView
+            android:id="@+id/txt_what"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="What do you want to do now, User ?"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/black"
+            android:layout_margin="18dp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/list_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/txt_what"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/icon_movie"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/ic_movie"
+                android:background="@drawable/circle_background"
+                android:padding="16dp"
+                android:layout_margin="18dp"
+                android:elevation="14dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/text_movie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Movie"
+                android:textSize="14sp"
+                android:textColor="#000"
+                android:fontFamily="@font/poppins_regular"
+                app:layout_constraintTop_toBottomOf="@id/icon_movie"
+                app:layout_constraintStart_toStartOf="@id/icon_movie"
+                app:layout_constraintEnd_toEndOf="@id/icon_movie"
+                android:layout_marginTop="4dp" />
+
+            <ImageView
+                android:id="@+id/icon_food"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/ic_food"
+                android:background="@drawable/circle_background"
+                android:padding="16dp"
+                android:layout_margin="18dp"
+                android:elevation="14dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/icon_movie"/>
+
+            <TextView
+                android:id="@+id/text_food"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Food"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="14sp"
+                android:textColor="#000"
+                app:layout_constraintTop_toBottomOf="@id/icon_food"
+                app:layout_constraintStart_toStartOf="@id/icon_food"
+                app:layout_constraintEnd_toEndOf="@id/icon_food"
+                android:layout_marginTop="4dp" />
+
+            <ImageView
+                android:id="@+id/icon_cinema"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/ic_watch"
+                android:background="@drawable/circle_background"
+                android:padding="16dp"
+                android:layout_margin="18dp"
+                android:elevation="14dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/icon_food"/>
+
+            <TextView
+                android:id="@+id/text_cinema"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cinema"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="14sp"
+                android:textColor="#000"
+                app:layout_constraintTop_toBottomOf="@id/icon_cinema"
+                app:layout_constraintStart_toStartOf="@id/icon_cinema"
+                app:layout_constraintEnd_toEndOf="@id/icon_cinema"
+                android:layout_marginTop="4dp" />
+
+            <ImageView
+                android:id="@+id/icon_private"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/ic_sofa"
+                android:background="@drawable/circle_background"
+                android:padding="16dp"
+                android:layout_margin="18dp"
+                android:elevation="14dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/icon_cinema"/>
+
+            <TextView
+                android:id="@+id/text_private"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Food"
+                android:fontFamily="@font/poppins_regular"
+                android:textSize="14sp"
+                android:textColor="#000"
+                app:layout_constraintTop_toBottomOf="@id/icon_private"
+                app:layout_constraintStart_toStartOf="@id/icon_private"
+                app:layout_constraintEnd_toEndOf="@id/icon_private"
+                android:layout_marginTop="4dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/our"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/list_item"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="18dp"
+        android:text="OUR HOTTEST MOVIE"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/see"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="see more"
+        app:layout_constraintTop_toBottomOf="@id/list_item"
+        app:layout_constraintEnd_toStartOf="@id/ic_arrow_key"
+        android:layout_marginTop="18dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="#2E5835"/>
+
+    <ImageView
+        android:id="@+id/ic_arrow_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="18dp"
+        app:layout_constraintTop_toBottomOf="@id/list_item"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/baseline_keyboard_arrow_right_24"/>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:padding="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/our">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView_movies"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="2"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

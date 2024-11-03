@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Theme with custom Toolbar -->
+    <style name="CustomToolbar" parent="Widget.AppCompat.ActionBar">
+        <item name="title">@string/app_name</item>
+        <item name="titleTextColor">#383838</item>
+        <item name="backgroundTint">@drawable/background_gradient_toolbar</item>
+        <item name="android:fontFamily">@font/poppins_bold</item>
+    </style>
+
+    <style name="Widget.MovieApp.ButtonShape" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+        <item name="textAllCaps">false</item>
+    </style>
+</resources>
